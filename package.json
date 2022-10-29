@@ -5,6 +5,9 @@
   "repository": "https://github.com/jnolascob/tokenizate-dapp.git",
   "author": "Jonathan Nolasco <jnolascob@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "deploy-bnb-testnet": "truffle migrate --network testnet"
+  },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
     "@ethersproject/providers": "^5.4.7",
