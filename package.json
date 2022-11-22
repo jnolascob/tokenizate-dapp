@@ -6,7 +6,8 @@
   "author": "Jonathan Nolasco <jnolascob@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "deploy-bnb-testnet": "truffle migrate --network testnet"
+    "deploy-bnb-testnet": "truffle migrate --network testnet",
+    "start:dev": "NODE_ENV=development DB_DEBUG_MODE=true nodemon --watch src src/index.js"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
@@ -22,12 +23,17 @@
     "ethers": "^5.4.7",
     "hardhat": "^2.12.1",
     "hardhat-gas-reporter": "^1.0.8",
+    "nodemon": "^2.0.20",
     "solidity-coverage": "^0.8.0",
     "typechain": "^8.1.0"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
     "@truffle/hdwallet-provider": "^2.1.0",
-    "dotenv": "^16.0.3"
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
   }
 }

@@ -18,6 +18,9 @@ yarn add --dev hardhat
 https://docs.openzeppelin.com/contracts/4.x/
 yarn add @openzeppelin/contracts
 
-# scripts:
+# scripts for ethereum:
 npx hardhat run scripts/deploy.js
 npx hardhat run scripts/deploy.js --network goerli
+
+# script for BNB:
+truffle migrate --network testnet
